@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>찾아오시는길 | SMAC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=q6pulpi248"></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+                <h1><a href="index.html"><span class="logoimg"><img src="images/logo.png"/></span></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="#" class="icon solid fa-angle-down">메뉴</a>
+							<ul>
+								<li><a href="info.html">앱개발지원센터소개</a></li>
+								<li><a href="localInfo.html">지역거점</a></li>
+								<li><a href="borrowWay.html">대여철차</a></li>
+								<li><a href="testUse.html">테스트베드이용절차</a></li>
+								<li><a href="list.html">대여장비목록</a></li>
+								<li><a href="map.html">찾아오시는길</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+                        <h2>찾아오시는 길</h2>
+                        <div class="line"></div>
+						<p>원주 SMAC 주소 : 강원도 원주시 흥업면 남원로 150 / TEL 033-760-8114</p>
+					</header>
+					<div class="box">
+						<span class="image featured"><img src="images/서브이미지_찾아오시는길.png" alt="" /></span>
+						<h3>교통정보</h3>
+                        <div class="row">
+                            <div class="col-12 col-12-narrower">
+                                <div id="map" style="width:100%;height:400px;"></div>
+                                <p class="mapFont">강원도 원주시 흥업면 남원로 150  TEL  033-760-8114 </p>
+                            </div>
+                            <script>
+                            var mapOptions = {
+                                center: new naver.maps.LatLng(37.304917, 127.922611),
+                                zoom: 15	
+                            };
+                            var map = new naver.maps.Map('map', mapOptions);
+                            var marker = new naver.maps.Marker({
+                                position: map.getCenter(),
+                                map: map
+                            });
+                            </script>
+                        </div>
+                        <h3>대중교통</h3>
+                        <div class="row">
+                            <div class="col-11 col-11-narrower">
+                                <ul class="transport">
+                                    <li><span class="startway">·  장양리 차고지(34번 버스) 출발</span> → 북원교 → 강원정비기술학원 → 우산철교 → 단계사거리 → 단계은행아파트 → 봉학로사거리 → 시외·고속버스 
+                                        터미널 → 국제아파트 → YWCA → 원일로 중앙시장 → 원주의료원 → 도영쇼핑 → 원주소방서 → 거장아파트 → <u>강릉원주대학교 하차</u></li>
+                                    <li><span class="startway">·  장양리 차고지(30번 버스) 출발</span> → 우리병원 → 진광중고등학교 → 상지대학교 → 우산철교 → 단계사거리 → 단계은행아파트 → 봉학로 사거리 
+                                        → 시외·고속버스터미널 → 원주교도소 → 원주시청(백운아트홀) → 대성고등학교 → 이마트 → <u>강릉원주대학교 하차</u></li>
+                                    <li><span class="startway">·  장양리 차고지(31번 귀래) 출발</span> → 우리병원 → 단계사거리 → 단계은행아파트 → 봉학로사거리 → 시외·고속버스터미널 → 국제아파트 → YWCA 
+                                        → 원일로 중앙시장 → 도영쇼핑 → 원주소방서 → 거장아파트 → <u>강릉원주대학교 하자</u></li>
+                                </ul>
+                            </div>
+                        </div>
+					</div>
+                </section>
+
+
+                
+            <!-- Footer -->
+            <footer id="footer" class="margintop">
+                <ul class="copyright">
+                    <li><img src="images/footer_logo.png" alt="" /></li>
+                    <li><p>&copy; 강원 원주시 흥업면 남원로 150 TEL 033-760-8114<br>
+            copyright (C) Gangneung-Wonju National University. all rights reserved</p></li>
+                    <li class="margintopMo">
+                        <select onchange="if(this.value) window.open(this.value);">
+                            <option>관련사이트</option>
+                            <option value="https://www.appvillage.or.kr/developInfo/openAPIInfo.do">Open API</option>
+                            <option value="https://www.appvillage.or.kr/developInfo/openSWInfo.do">Open SW</option>
+                            <option value="https://www.appvillage.or.kr/developerTools/onLineTestTools.do">온라인 테스트 도구</option>
+                            <option value="https://www.appvillage.or.kr/developInfo/selectMovieEduList.do">동영상 강의</option>
+                        </select>
+                    </li>
+                </ul>
+            </footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
