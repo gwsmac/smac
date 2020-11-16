@@ -194,13 +194,12 @@
 	}
 
 	h3 {
-		font-size: 1.75em;
+		font-size: 1.7em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
 		font-weight: 500;
 		color: #222222;
 		font-family: SegoeUI;
-		font-size: 36px;
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
@@ -4200,11 +4199,15 @@
 	}
 
 	.icon.major.accent6 {
-		background: #f2ebdc;
+		background: #ffffff;
 		color: #222222;
-		width: 13em;
-		height: 13em;
-		margin: 1em;
+		border-radius: 25px;
+		width: 15em;
+		height: 15em;
+		border: solid 1px #999999;
+		margin: 1em 0 0 0;
+		text-align: center;
+		padding: 2em;
 	}
 
 	.topmargin .arrow {
@@ -4218,20 +4221,28 @@
 	.useway .stepFont {
 		padding-left: 0;
     	text-align: center;
-		font-weight: 500;
-		font-size: 1.7em;
-		line-height: 3.5em;
+		font-family: 'NanumSquare';
+    	font-weight: 800;
+		font-size: 1.8em;
+		font-stretch: normal;
+  		font-style: normal;
+ 		line-height: 1em;
+  		letter-spacing: -1.44px;
+	}
+
+	.verticalMid {
+		vertical-align: middle;
+		width: 4.15em;
 	}
 
 	.useway .wayFont {
-		padding-left: 0;
-    	text-align: center;
-		font-weight: 500;
-		font-size: 0.9em;
-		line-height: 2em;
-		width: 80%;
-		margin: 0 auto;
-
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: -0.64px;
+		color: #666666;
+		font-size: 0.8em;
 	}
 
 	.sublist {
